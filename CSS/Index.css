@@ -505,10 +505,31 @@ body .site-container .site-header .action-header .donate-btn {
 body .site-container .site-header .action-header .logo-img {
   width: 15%;
 }
-body .home-hero .home-carousel {
-  height: 500px;
+body .home-hero .home-hero-text {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 3rem 0 3rem;
+  margin-bottom: 3rem;
+}
+body .home-hero .home-hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+body .home-hero .home-carousel {
+  height: 75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3.5rem;
+  margin: 10rem 0 6rem 0;
+}
+body .home-hero .home-carousel .fas {
+  font-size: 4rem;
 }
 body .home-hero .home-carousel img {
-  height: 100%;
+  height: auto;
+  max-width: 90%;
+  padding: 0 1rem;
+  display: none;
 }

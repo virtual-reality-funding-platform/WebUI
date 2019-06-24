@@ -110,11 +110,34 @@ body {
     width: 15%;
   }
   .home-hero {
-    .home-carousel {
-      height: 500px;
+    .home-hero-text {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6rem 3rem 0 3rem;
+      margin-bottom: 3rem;
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+      }
+    }
+    .home-carousel {
+      height: 75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 3.5rem;
+      margin: 10rem 0 6rem 0;
+
+      .fas {
+        font-size: 4rem;
+      }
+
       img {
-        height: 100%;
+        height: auto;
+        max-width: 90%;
+        padding: 0 1rem;
+        display: none;
       }
     }
   }
