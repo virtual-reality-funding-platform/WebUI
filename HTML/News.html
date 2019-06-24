@@ -3,6 +3,9 @@
         <meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
         <title>News | SIXR - Stimulated Immersive Experimental Realities</title>
         <link rel="stylesheet" type="text/css" href="../CSS/Index.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+      <script src="../JS/Tabs.js" async></script>
     </head>
     <body>
             <div class = 'about-container site-container'>
@@ -23,7 +26,36 @@
                             <img class= 'logo-img' alt = 'SIXR logo' src = '../Images/cropped-SIXR-Logo-Transparent.png'>
                         </div>
                     </div> 
-                </div>
-            </body>
+                    <div class = 'news-content'>
+                        <h1>Happening Now</h1>
+                        <div class="tabs">
+                                <div class="topics">
+                                  <div data-tab="all" class="tab active-tab">ALL</div>
+                                  <div data-tab="vr-news" class="tab">VR NEWS</div>
+                                  <div data-tab="investor-news" class="tab">OUR INVESTORS</div>
+                                  <div data-tab="project-news" class="tab">OUR PROJECTS</div>
+                                  <div data-tab="tech-news" class="tab">TECH NEWS</div>
+                                </div>
+                              </div>
+                        <div class = 'story-cards'>
+                            <div class = 'news-story story-1' data-tab = 'vr-news'>
+                            <h2>Placeholder for News Heading</h2>
+                            <p>Placeholder for News Story</p>
+                            </div>
+                        <div class = 'news-story story-2' data-tab = 'project-news'>
+                            <h2>Placeholder for News Heading</h2>
+                            <p>Placeholder for News Story</p>
+                        </div>
+                        <div class = 'news-story story-3' data-tab = 'tech-news'>
+                            <h2>Placeholder for News Heading</h2>
+                            <p>Placeholder for News Story</p>
+                        </div>
+                        <div class = 'news-story story-4' data-tab = 'investor-news'>
+                            <h2>Placeholder for News Heading</h2>
+                            <p>Placeholder for News Story</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
     </body>
 </html>
