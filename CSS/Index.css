@@ -141,7 +141,7 @@ html {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  background: #3f3f3f;
+  background: black;
   align-items: center;
 }
 .site-container .site-header .header-nav {
@@ -164,6 +164,10 @@ html {
   justify-content: flex-end;
   align-items: center;
   margin: 20px;
+}
+.site-container .site-header .action-header .btn {
+  border: none;
+  border-radius: 15px;
 }
 .site-container .site-header .action-header .project-btn {
   background: #ea1869;
@@ -313,53 +317,4 @@ table {
 }
 html {
   font-size: 62.5%;
-}
-.site-container {
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-}
-.site-container .site-header {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  background: #3f3f3f;
-  align-items: center;
-}
-.site-container .site-header .header-nav {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-.site-container .site-header .header-nav .nav-item {
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-  margin: 0 40px;
-}
-.site-container .site-header .action-header {
-  width: 45%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 20px;
-}
-.site-container .site-header .action-header .btn {
-  color: white;
-  height: 40px;
-  margin: 0 10px;
-  border: none;
-  border-radius: 15px;
-}
-.site-container .site-header .action-header .project-btn {
-  background: #ea1869;
-}
-.site-container .site-header .action-header .donate-btn {
-  background: #51b13e;
-}
-.site-container .site-header .action-header .logo-img {
-  width: 15%;
 }
