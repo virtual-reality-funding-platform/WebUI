@@ -1,0 +1,387 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato";
+  color: @SIXR-color-primary-grey;
+}
+
+body {
+
+  .home-container .home-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: black;
+    align-items: center;
+    @media @navOne {
+      flex-direction: column-reverse;
+    }
+  }
+  .home-container .home-header .header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .home-container .home-header .header-nav .nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 40px;
+    @media @navOne {
+      padding-bottom: 15px;
+      margin: 0px 20px;
+    }
+    @media @navTwo {
+      margin: 0px 12px;
+    }
+  }
+  .home-container .home-header .header-nav .nav-item:hover {
+    color: @SIXR-yellow;
+  }
+  .home-container .home-header .action-header {
+    width: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0;
+    @media @navOne {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+  
+  .home-container .home-header .action-header .btn {
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    font-family: "Lato";
+    font-weight: bold;
+  }
+  .home-container .home-header .action-header .btn:hover {
+    cursor: pointer;
+  }
+  .home-container .home-header .action-header .project-btn {
+    background: @SIXR-pink;
+    color: white;
+    height: 40px;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+  .home-container .home-header .action-header .project-btn:hover {
+    background: tint(@SIXR-pink, 50%);
+  }
+  .home-container .home-header .action-header .donate-btn {
+    background: @SIXR-green;
+    color: white;
+    height: 40px;
+    padding: 0 10px;
+    margin: 0 20px 0px 10px;
+  }
+  .home-container .home-header .action-header .donate-btn:hover {
+    background: tint(@SIXR-green, 50%);
+  }
+  .home-container .home-header .action-header .logo-img {
+    width: 80px;
+    height: 25px;
+  }
+  .home-hero {
+    .home-hero-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6rem 3rem 0 3rem;
+      padding-bottom: 3rem;
+      background: rgb(245, 244, 245);
+      h1 {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        font-weight: bold;
+      }
+      button {
+        font-family: "Lato";
+        font-weight: bold;
+        font-size: 1.5rem;
+        background: white;
+        border: 2px solid @SIXR-blue;
+        padding: 0.75rem;
+        background: @SIXR-blue;
+        color: white;
+        outline: none;
+      }
+      button:hover {
+        color: @SIXR-blue;
+        background: white;
+        cursor:pointer;
+      }
+    }
+    .home-carousel {
+      max-height: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 3.5rem;
+
+      .fas {
+        font-size: 4rem;
+        position: static;
+      }
+      .fas:hover {
+        color: @SIXR-blue;
+        cursor: pointer;
+      }
+
+      img {
+        height: auto;
+        max-width: 70%;
+        overflow: hidden;
+        padding: 0 1rem;
+        display: none;
+        padding-top: 3rem;
+      }
+    }
+  }
+  .home-main {
+    .home-main-selector{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(245, 244, 245);
+      padding-top: 6rem;
+
+      h1 {
+        font-size: 4rem;
+        padding-bottom: 2rem;
+      }
+      .selector-icons {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        padding-bottom: 6rem;
+        text-align: center;
+        i {
+          font-size: 4rem;
+          border: 3px solid @SIXR-color-primary-grey;
+          padding: 1.5rem;
+          border-radius: 50%;
+        }
+        p {
+          font-size: 2rem;
+          margin-top: 1rem;
+        }
+      }
+      .icon1:hover p{
+        color: @SIXR-blue;
+        cursor: pointer;
+      }
+      .icon1:hover i {
+        border-color: @SIXR-blue;
+        background-color: @SIXR-blue;
+        color: white;
+        cursor: pointer;
+      }
+      .icon2:hover p{
+        color: @SIXR-blue;
+        cursor: pointer;
+      }
+      .icon2:hover i {
+        border-color: @SIXR-blue;
+        background-color: @SIXR-blue;
+        color: white;
+        cursor: pointer;
+      }
+      .icon3:hover p{
+        color: @SIXR-blue;
+        cursor: pointer;
+      }
+      .icon3:hover i {
+        border-color: @SIXR-blue;
+        background-color: @SIXR-blue;
+        color: white;
+        cursor: pointer;
+      }
+      .icon4:hover p{
+        color: @SIXR-blue;
+        cursor: pointer;
+      }
+      .icon4:hover i {
+        border-color: @SIXR-blue;
+        background-color: @SIXR-blue;
+        color: white;
+        cursor: pointer;
+      }
+      .icon-selected {
+        color: @SIXR-blue;
+
+        .minus-border {
+          border-style: none;
+        }
+      }
+    }
+    .home-main-content {
+
+      .home-main-item{
+        display: none;
+        padding: 3rem;
+      }
+
+      .home-main-item-selected {
+        display: flex;
+      }
+      p {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .flexible-parent{
+    background: black;
+    display: flex;
+    
+    .flexible-child {
+      width: 100%;
+      display: flex;
+      padding: 5rem 0;
+      justify-content: center;
+      
+      h1 {
+        color: white;
+        font-size: 4rem;
+        margin-right: 5rem;
+      }
+      p {
+        color: white;
+        font-size: 2rem;
+      }
+      button {
+        font-family: "Lato";
+        font-weight: bold;
+        font-size: 1.5rem;
+        background: white;
+        border: 2px solid @SIXR-blue;
+        padding: 0.75rem;
+        background: @SIXR-blue;
+        color: white;
+        outline: none;
+      }
+      button:hover {
+        color: @SIXR-blue;
+        background: white;
+        cursor:pointer;
+      }
+    }
+  }
+  footer {
+    background: black;
+    display: flex;
+    flex-direction: column;
+
+    .logo-links {
+      border-top: 0.5px solid white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+      padding: 2rem 0;
+
+      .footer-logo {
+
+        img {
+          width: 120px;
+          height: 40px;
+        }
+      }
+      .links {
+        padding-right: 0.5%;
+
+        i {
+          font-size: 3rem;
+          margin: 0 0.25rem;
+          color: white;
+        }
+        i:hover {
+          color: @SIXR-pink;
+          cursor: pointer;
+        }
+      }
+    }
+    .footer-content {
+      background: black;
+      ul {
+        padding-left: 0.5%;
+        li {
+          color: white;
+          font-size: 1.2rem;
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+    .footer-copyright {
+      background: black;
+      color: white;
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
