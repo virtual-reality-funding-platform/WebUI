@@ -126,7 +126,7 @@ body {
     padding: 0 10px;
     margin: 0 10px;
   }
-  .home-contaienr .home-header .action-header .project-btn:hover {
+  .home-container .home-header .action-header .project-btn:hover {
     background: tint(@SIXR-pink, 50%);
   }
   .home-container .home-header .action-header .donate-btn {
@@ -271,14 +271,26 @@ body {
         color: white;
         cursor: pointer;
       }
+      .icon-selected {
+        color: @SIXR-blue;
+
+        .minus-border {
+          border-style: none;
+        }
+      }
     }
     .home-main-content {
-      
-      h2 {
-        font-size: 2.5rem;
+
+      .home-main-item{
+        display: none;
+        padding: 3rem;
+      }
+
+      .home-main-item-selected {
+        display: flex;
       }
       p {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
       }
     }
   }
@@ -332,7 +344,7 @@ body {
       margin: 1rem 0;
       padding: 2rem 0;
 
-      .logo {
+      .footer-logo {
 
         img {
           width: 120px;
@@ -340,21 +352,27 @@ body {
         }
       }
       .links {
+        padding-right: 0.5%;
+
         i {
-          font-size: 2rem;
+          font-size: 3rem;
           margin: 0 0.25rem;
+          color: white;
         }
         i:hover {
           color: @SIXR-pink;
+          cursor: pointer;
         }
       }
     }
     .footer-content {
       background: black;
       ul {
+        padding-left: 0.5%;
         li {
           color: white;
-          font-size: 1rem;
+          font-size: 1.2rem;
+          padding-bottom: 0.5rem;
         }
       }
     }
