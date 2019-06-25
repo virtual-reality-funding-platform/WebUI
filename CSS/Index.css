@@ -365,7 +365,6 @@ table {
 html {
   font-size: 62.5%;
 }
-<<<<<<< HEAD
 .news-content {
   display: flex;
   flex-flow: column nowrap;
@@ -438,7 +437,7 @@ html {
   margin-bottom: 16px;
   padding: 24px;
   background-color: white;
-=======
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -885,5 +884,4 @@ body footer .footer-copyright {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
->>>>>>> origin
 }
