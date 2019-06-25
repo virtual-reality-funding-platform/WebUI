@@ -1,0 +1,170 @@
+body {
+  .fellowship-head {
+    display: flex;
+    margin: 3rem 0;
+    width: 100%;
+    .fellowship-head-text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      width: 50%;
+      h1 {
+        font-size: 5rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+      h2 {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+      p {
+        margin-bottom: 2rem;
+        font-size: 1.75rem;
+      }
+      ul {
+        list-style-type: square;
+        list-style-position: inside;
+      }
+      li {
+        font-size: 1.75rem;
+      }
+    }
+    .fellowship-head-image {
+      img {
+        max-height: 100%;
+        max-width: 100%;
+
+        @media @navOne {
+          display: none;
+        }
+      }
+    }
+  }
+  .fellowship-main {
+    width: 100%;
+    background: rgb(245, 244, 245);
+    .fellowship-main-heading {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 3rem 0;
+      p {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      h1 {
+        font-size: 4rem;
+        font-weight: bold;
+      }
+    }
+    .fellowship-selectors{
+      display: flex;
+      justify-content: center;
+      margin-left: 0.6%;
+      .shot-selected {
+        opacity: 0.4;
+      }
+      img {
+        max-width: 95%;
+        height: auto;
+      }
+      img:hover {
+        cursor: pointer;
+        opacity: 0.5;
+      }
+    }
+    .fellow {
+      display: none;
+      padding: 0 1rem 1rem 1rem;
+      
+      h1 {
+        font-size: 5rem;
+        font-weight: bold;
+        margin-top: 2rem;
+      }
+      h2 {
+        font-size: 3rem;
+        border-bottom: 4px solid;
+        width: max-content;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+      button {
+        width: max-content;
+        font-size: 2rem;
+        margin: 1rem 1rem 1rem 0;
+        font-family: "Lato";
+        font-weight: bold;
+        background: white;
+        border: 2px solid @SIXR-blue;
+        padding: 0.75rem;
+        background: @SIXR-blue;
+        color: white;
+        outline: none;
+      }
+      button:hover {
+        color: @SIXR-blue;
+        background: white;
+        cursor:pointer;
+      }
+      .icons {
+        display: flex;
+
+        i {
+          font-size: 3.5rem;
+          padding: 1rem 1rem 1rem 0;
+        }
+        i:hover {
+          color: @SIXR-pink;
+          cursor: pointer;
+        }
+      }
+    }
+    .fellow-selected {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .fellow-flex-parent{
+    background: black;
+    display: flex;
+    
+    .fellow-flex-child {
+      width: 100%;
+      display: flex;
+      padding: 2.5rem 0;
+      justify-content: center;
+      
+      h1 {
+        color: white;
+        font-size: 4rem;
+        margin-right: 5rem;
+      }
+      p {
+        color: white;
+        font-size: 2rem;
+      }
+      button {
+        font-family: "Lato";
+        font-weight: bold;
+        font-size: 1.5rem;
+        background: white;
+        border: 2px solid @SIXR-yellow;
+        padding: 0.75rem;
+        background: @SIXR-yellow;
+        color: white;
+        outline: none;
+      }
+      button:hover {
+        color: @SIXR-yellow;
+        background: white;
+        cursor:pointer;
+      }
+    }
+  }
+}
