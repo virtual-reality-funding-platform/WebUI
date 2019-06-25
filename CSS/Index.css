@@ -125,440 +125,6 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-.site-container {
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-}
-.site-container .site-header {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  background: black;
-  align-items: center;
-}
-.site-container .site-header .header-nav {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-.site-container .site-header .header-nav .nav-item {
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-  margin: 0 40px;
-}
-.site-container .site-header .action-header {
-  width: 45%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 20px;
-}
-.site-container .site-header .action-header .btn {
-  border: none;
-  border-radius: 15px;
-}
-.site-container .site-header .action-header .project-btn {
-  background: #ea1869;
-  color: white;
-  height: 40px;
-  margin: 0 10px;
-}
-.site-container .site-header .action-header .donate-btn {
-  background: #51b13e;
-  color: white;
-  height: 40px;
-  margin: 0 10px;
-}
-.site-container .site-header .action-header .logo-img {
-  width: 15%;
-}
-.site-container .about-content {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-}
-.site-container .about-content h1 {
-  font-size: 5rem;
-  padding: 10px;
-  margin: 30px;
-  border-bottom: 5px dashed #2cbff2;
-}
-.site-container .about-content .content {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  padding: 40px;
-}
-.site-container .about-content .content .content-box {
-  width: 50%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  font-size: 2rem;
-}
-.site-container .about-content .content .content-box h2 {
-  font-size: 3rem;
-}
-.site-container .about-content .content img {
-  height: 40%;
-}
-.site-container .about-content .top-content {
-  border-bottom: 5px dashed #ea1869;
-}
-.site-container .about-content .middle-content {
-  background: #3f3f3f;
-  color: white;
-  border-bottom: 5px dashed #feb612;
-}
-.site-container .about-content .bottom-content {
-  border-bottom: 5px dashed #51b13e;
-}
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-.news-content {
-  display: flex;
-  flex-flow: column nowrap;
-  font-size: 2rem;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
-.news-content h1 {
-  width: 100%;
-  font-size: 5rem;
-  padding: 10px;
-  margin: 30px;
-  border-bottom: 5px dashed #2cbff2;
-}
-.news-content .tabs {
-  border-bottom: 1px solid #3f3f3f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  height: 47px;
-  background-color: #3f3f3f;
-}
-.news-content .tabs .topics {
-  display: flex;
-  justify-content: none;
-  align-items: center;
-  flex-direction: row;
-}
-.news-content .tabs .tab {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  color: white;
-  background-color: #51b13e;
-  margin: 0 5px;
-  padding: 2px 10px;
-  font-size: 2rem;
-  letter-spacing: 2px;
-  cursor: pointer;
-  font-weight: bold;
-}
-.news-content .tabs .tab:hover {
-  text-decoration: underline;
-}
-.news-content .tabs .active-tab {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-}
-.news-content .story-cards {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: none;
-  flex-direction: row;
-  width: 100%;
-  background-color: #2cbff2;
-  flex-wrap: wrap;
-  border: 2px dashed #51b13e;
-}
-.news-content .story-cards .news-story {
-  display: flex;
-  justify-content: space-between;
-  align-items: none;
-  flex-direction: column;
-  width: 95%;
-  margin-bottom: 16px;
-  padding: 24px;
-  background-color: white;
-}
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
   content: '';
   content: none;
 }
@@ -884,4 +450,170 @@ body footer .footer-copyright {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.site-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.site-container .site-header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background: black;
+  align-items: center;
+}
+.site-container .site-header .header-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.site-container .site-header .header-nav .nav-item {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  margin: 0 40px;
+}
+.site-container .site-header .action-header {
+  width: 45%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px;
+}
+.site-container .site-header .action-header .btn {
+  border: none;
+  border-radius: 15px;
+}
+.site-container .site-header .action-header .project-btn {
+  background: #ea1869;
+  color: white;
+  height: 40px;
+  margin: 0 10px;
+}
+.site-container .site-header .action-header .donate-btn {
+  background: #51b13e;
+  color: white;
+  height: 40px;
+  margin: 0 10px;
+}
+.site-container .site-header .action-header .logo-img {
+  width: 15%;
+}
+.site-container .about-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.site-container .about-content h1 {
+  font-size: 5rem;
+  padding: 10px;
+  margin: 30px;
+  border-bottom: 5px dashed #2cbff2;
+}
+.site-container .about-content .content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 40px;
+}
+.site-container .about-content .content .content-box {
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+.site-container .about-content .content .content-box h2 {
+  font-size: 3rem;
+}
+.site-container .about-content .content img {
+  height: 40%;
+}
+.site-container .about-content .top-content {
+  border-bottom: 5px dashed #ea1869;
+}
+.site-container .about-content .middle-content {
+  background: #3f3f3f;
+  color: white;
+  border-bottom: 5px dashed #feb612;
+}
+.site-container .about-content .bottom-content {
+  border-bottom: 5px dashed #51b13e;
+}
+.news-content {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.news-content h1 {
+  width: 100%;
+  font-size: 5rem;
+  padding: 10px;
+  margin: 30px;
+  border-bottom: 5px dashed #2cbff2;
+}
+.news-content .tabs {
+  border-bottom: 1px solid #3f3f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 47px;
+  background-color: #3f3f3f;
+}
+.news-content .tabs .topics {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+}
+.news-content .tabs .tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  background-color: #51b13e;
+  margin: 0 5px;
+  padding: 2px 10px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.news-content .tabs .tab:hover {
+  text-decoration: underline;
+}
+.news-content .tabs .active-tab {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.news-content .story-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-direction: row;
+  width: 100%;
+  background-color: #2cbff2;
+  flex-wrap: wrap;
+  border: 2px dashed #51b13e;
+}
+.news-content .story-cards .news-story {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+  width: 95%;
+  margin-bottom: 16px;
+  padding: 24px;
+  background-color: white;
 }
