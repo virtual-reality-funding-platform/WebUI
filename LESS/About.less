@@ -169,9 +169,9 @@ html {
       align-items: center;
       margin: 20px;
 
-      .btn{
-          border: none;
-          border-radius: 15px;
+      .btn {
+        border: none;
+        border-radius: 15px;
       }
 
       .project-btn {
@@ -191,6 +191,54 @@ html {
       .logo-img {
         width: 15%;
       }
+    }
+  }
+  .about-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+      h1 {
+        font-size: 5rem;
+        padding: 10px;
+        margin: 30px;
+        border-bottom: 5px dashed @SIXR-blue;
+      }
+
+    .content {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      padding: 40px;
+
+      .content-box {
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        font-size: 2rem;
+
+        h2 {
+          font-size: 3rem;
+        }
+      }
+
+      img {
+        height: 40%;
+      }
+    }
+    .top-content {
+      border-bottom: 5px dashed @SIXR-pink;
+    }
+
+    .middle-content {
+      background: @SIXR-color-primary-grey;
+      color: white;
+      border-bottom: 5px dashed @SIXR-yellow;
+    }
+
+    .bottom-content {
+      border-bottom: 5px dashed @SIXR-green;
     }
   }
 }
