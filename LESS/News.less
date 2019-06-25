@@ -99,21 +99,25 @@ html {
             border: 2px solid black;
           }
         }
-      }
+      
 
     .story-cards {
-        .flex(center, center, column) {
+        .flex(space-evenly); 
+            .width-100();
+            background-color: @SIXR-blue;
             flex-wrap: wrap;
-        }
-        width: 80%;
         border: 2px dashed @SIXR-green;
         
 
         .news-story {
-            width: 20%;
-            border: 1px solid black;
-            padding: 40px;
+          .flex(space-between, none, column);
+          width: 95%;
+          margin-bottom: 16px;
+            padding: 24px;
+            background-color: white;
+
         }
     }
+}
 
 

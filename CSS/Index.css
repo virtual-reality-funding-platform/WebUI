@@ -418,12 +418,23 @@ html {
   color: black;
   border: 2px solid black;
 }
-.story-cards {
-  width: 80%;
+.news-content .story-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-direction: row;
+  width: 100%;
+  background-color: #2cbff2;
+  flex-wrap: wrap;
   border: 2px dashed #51b13e;
 }
-.story-cards .news-story {
-  width: 20%;
-  border: 1px solid black;
-  padding: 40px;
+.news-content .story-cards .news-story {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+  width: 95%;
+  margin-bottom: 16px;
+  padding: 24px;
+  background-color: white;
 }

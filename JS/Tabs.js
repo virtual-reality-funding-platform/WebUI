@@ -3,9 +3,9 @@ class TabLink {
        this.tabElement = tabElement
        this.tabData = this.tabElement.dataset.tab
       if(this.tabData === 'all'){
-         this.cards = document.querySelectorAll('.card')
+         this.cards = document.querySelectorAll('.news-story')
       } else {
-         this.cards = document.querySelectorAll(`.card[data-tab='${this.tabData}']`)
+         this.cards = document.querySelectorAll(`.news-story[data-tab='${this.tabData}']`)
       }
 
       this.cards = Array.from(this.cards).map(card => {
@@ -25,7 +25,7 @@ class TabLink {
          tab.classList.remove('active-tab')
        })
   
-       const cards = document.querySelectorAll('.card')
+       const cards = document.querySelectorAll('.news-story')
   
        cards.forEach(card => {
          card.style.display = 'none'
