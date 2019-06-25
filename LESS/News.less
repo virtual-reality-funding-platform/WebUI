@@ -6,6 +6,11 @@
   align-items: center;
   margin: 20px;
 
+  @media @navTwo {
+    margin: 0 0 0 0;
+  }
+
+
   h1 {
     width: 100%;
     font-size: 5rem;
@@ -22,7 +27,18 @@
     background-color: @SIXR-color-primary-grey;
     .topics {
       .flex(none, center);
+      @media @navTwo {
+        flex-direction: column;
+        width: 100%;
+      }
     }
+      @media @navTwo {
+        flex-direction: column;
+        height: 35%;
+      }
+    
+
+    
     .tab {
       .flex(space-between, center);
       color: white;
@@ -35,6 +51,12 @@
       font-weight: bold;
       &:hover {
         text-decoration: underline;
+      }
+
+      @media @navTwo {
+        width: 100%;
+        border: 1px solid black;
+        margin: 10px;
       }
     }
     .active-tab {
