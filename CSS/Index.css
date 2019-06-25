@@ -376,7 +376,7 @@ body .flexible-parent {
 body .flexible-parent .flexible-child {
   width: 100%;
   display: flex;
-  padding: 5rem 0;
+  padding: 2.5rem 0;
   justify-content: center;
 }
 body .flexible-parent .flexible-child h1 {
@@ -717,4 +717,167 @@ body footer .footer-copyright {
   margin-bottom: 16px;
   padding: 24px;
   background-color: white;
+}
+body .fellowship-head {
+  display: flex;
+  margin: 3rem 0;
+  width: 100%;
+}
+body .fellowship-head .fellowship-head-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+}
+body .fellowship-head .fellowship-head-text h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+body .fellowship-head .fellowship-head-text h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+body .fellowship-head .fellowship-head-text p {
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+}
+body .fellowship-head .fellowship-head-text ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+body .fellowship-head .fellowship-head-text li {
+  font-size: 1.75rem;
+}
+body .fellowship-head .fellowship-head-image img {
+  max-height: 100%;
+  max-width: 100%;
+}
+@media (max-width: 1030px) {
+  body .fellowship-head .fellowship-head-image img {
+    display: none;
+  }
+}
+body .fellowship-main {
+  width: 100%;
+  background: #f5f4f5;
+}
+body .fellowship-main .fellowship-main-heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 0;
+}
+body .fellowship-main .fellowship-main-heading p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+body .fellowship-main .fellowship-main-heading h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+body .fellowship-main .fellowship-selectors {
+  display: flex;
+  justify-content: center;
+  margin-left: 0.6%;
+}
+body .fellowship-main .fellowship-selectors .shot-selected {
+  opacity: 0.4;
+}
+body .fellowship-main .fellowship-selectors img {
+  max-width: 95%;
+  height: auto;
+}
+body .fellowship-main .fellowship-selectors img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+body .fellowship-main .fellow {
+  display: none;
+  padding: 0 1rem 1rem 1rem;
+}
+body .fellowship-main .fellow h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+body .fellowship-main .fellow h2 {
+  font-size: 3rem;
+  border-bottom: 4px solid;
+  width: max-content;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+body .fellowship-main .fellow p {
+  font-size: 2rem;
+}
+body .fellowship-main .fellow button {
+  width: max-content;
+  font-size: 2rem;
+  margin: 1rem 1rem 1rem 0;
+  font-family: "Lato";
+  font-weight: bold;
+  background: white;
+  border: 2px solid #2cbff2;
+  padding: 0.75rem;
+  background: #2cbff2;
+  color: white;
+  outline: none;
+}
+body .fellowship-main .fellow button:hover {
+  color: #2cbff2;
+  background: white;
+  cursor: pointer;
+}
+body .fellowship-main .fellow .icons {
+  display: flex;
+}
+body .fellowship-main .fellow .icons i {
+  font-size: 3.5rem;
+  padding: 1rem 1rem 1rem 0;
+}
+body .fellowship-main .fellow .icons i:hover {
+  color: #ea1869;
+  cursor: pointer;
+}
+body .fellowship-main .fellow-selected {
+  display: flex;
+  flex-direction: column;
+}
+body .fellow-flex-parent {
+  background: black;
+  display: flex;
+}
+body .fellow-flex-parent .fellow-flex-child {
+  width: 100%;
+  display: flex;
+  padding: 2.5rem 0;
+  justify-content: center;
+}
+body .fellow-flex-parent .fellow-flex-child h1 {
+  color: white;
+  font-size: 4rem;
+  margin-right: 5rem;
+}
+body .fellow-flex-parent .fellow-flex-child p {
+  color: white;
+  font-size: 2rem;
+}
+body .fellow-flex-parent .fellow-flex-child button {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: white;
+  border: 2px solid #feb612;
+  padding: 0.75rem;
+  background: #feb612;
+  color: white;
+  outline: none;
+}
+body .fellow-flex-parent .fellow-flex-child button:hover {
+  color: #feb612;
+  background: white;
+  cursor: pointer;
 }
