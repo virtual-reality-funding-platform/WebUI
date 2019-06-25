@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../CSS/Index.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ada5f6f83c.js"></script>
-    <title>Home | SIXR - Stimulated Immersive Experimental Realities</title>
+    <title>Showcase | SIXR - Stimulated Immersive Experimental Realities</title>
   </head>
   
   <body>
@@ -27,4 +27,32 @@
         </div>
       </header>
     </div>
+
+    <!-- The grid: four columns -->
+    <div class="Showcase-P1">
+        <h1></h1>
+    </div>
+<div class="row">
+    <div class="column">
+      <img src="img_nature.jpg" alt="Virtual Modeling: Help Clients and Coworkers See the Future with 3D Models!" onclick="ShowcaseGallery(this);">
+    </div>
+    <div class="column">
+      <img src="img_snow.jpg" alt="Education: Make Lessons Come Alive with 3D Models!" onclick="ShowcaseGallery(this);">
+    </div>
+    <div class="column">
+      <img src="img_mountains.jpg" alt="How-To Videos: Give Your Products an Edge by Showing How to Use Them in 3D!" onclick="ShowcaseGallery(this);">
+    </div>
+</div>
+  
+  <!-- The expanding image container -->
+<div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
 </body>
