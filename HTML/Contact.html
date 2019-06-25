@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../CSS/Index.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ada5f6f83c.js"></script>
-    <title>Home | SIXR - Stimulated Immersive Experimental Realities</title>
+    <title>Contact | SIXR - Stimulated Immersive Experimental Realities</title>
   </head>
   
   <body>
@@ -34,13 +34,40 @@
 <h2>Two Equal Columns</h2>
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
+  <div class="column">
+    <h2>Contact Us Today!</h2>
+    <p><b>Hours of Operation:</b><br>Monday-Friday: 9:00 - 5:00 PST/PDT</p>
+    <p><b>Phone Number:</b> (555) 555-5555<br></p>
+    <p><b>Email: </b> <a href="mailto:contact@sixr.com">Contact@SIXR.com</a>
+    </p></p>
   </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
+  <div class="column" >
+    <div class="comment-form-and picture">
+        <div class="contact-image">
+
+        </div>
+        <div id="after_submit"></div>
+            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <label class="required" for="name">Your name:</label><br />
+                    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                    <span id="name_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                    <label class="required" for="email">Your email:</label><br />
+                    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                    <span id="email_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                    <label class="required" for="message">Your message:</label><br />
+                    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                    <span id="message_validation" class="error_message"></span>
+                </div>
+
+               <input id="submit_button" type="submit" value="Send email" />
+            </form>
+        <!-- Remember the CSS and Java components for this. See example saved in Chrome-->
+    </div>
   </div>
 </div>
 </body>
