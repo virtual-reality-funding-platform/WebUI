@@ -7,11 +7,15 @@
 
   .site-header {
     display: flex;
+    width: 100%;
     flex-flow: row;
     justify-content: space-between;
     background: black;
     align-items: center;
 
+    @media @navOne {
+      flex-direction: column-reverse;
+    }
     .header-nav {
       display: flex;
       flex-flow: row nowrap;
@@ -22,21 +26,49 @@
       .nav-item {
         text-decoration: none;
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 0 40px;
+
+        @media @navOne {
+          padding-bottom: 15px;
+          margin: 0 20px;
+        }
+
+        @media @navTwo {
+          margin: 0 12px;
+        }
+      }
+
+      .nav-item:hover {
+        color: @SIXR-yellow
       }
     }
     .action-header {
-      width: 45%;
+      width: 20%;
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-end;
       align-items: center;
-      margin: 20px;
+      margin: 20px 0;
+
+      @media @navOne {
+        width: 100%;
+        justify-content: center;
+        
+      }
 
       .btn {
         border: none;
-        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        border-radius: 2px;
+        font-size: 1.5rem;
+        font-family: 'Lato';
+        font-weight: bold;
+      }
+
+      .btn:hover {
+        cursor: pointer;
       }
 
       .project-btn {
@@ -44,17 +76,32 @@
         color: white;
         height: 40px;
         margin: 0 10px;
+        padding: 0 10px;
+      }
+
+      .project-btn:hover {
+        background: tint(@SIXR-pink, 50%);
       }
 
       .donate-btn {
         background: @SIXR-green;
         color: white;
         height: 40px;
-        margin: 0 10px;
+        margin: 0 20px 0 10px;
+        padding: 0 10px;
+      }
+
+      .donate-btn:hover {
+        background: tint(@SIXR-green, 50%);
       }
 
       .logo-img {
-        width: 15%;
+        width: 80px;
+        height: 25px;
+
+        @media @navOne {
+          margin-bottom: 10px;
+        }
       }
     }
   }
@@ -76,6 +123,12 @@
       justify-content: space-around;
       padding: 40px;
 
+      @media @navOne {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+
       .content-box {
         width: 50%;
         display: flex;
@@ -83,13 +136,31 @@
         justify-content: space-around;
         font-size: 2rem;
 
+        @media @navOne {
+          justify-content: center;
+          width: 100%;
+          margin: 10px;
+        }
+
         h2 {
           font-size: 3rem;
+
+          @media @navOne {
+            margin: 10px;
+          }
         }
       }
 
       img {
         height: 40%;
+
+        @media @navOne {
+          width: 50%;
+        }
+
+        @media @navTwo {
+          width: 100%;
+        }
       }
     }
     .top-content {
