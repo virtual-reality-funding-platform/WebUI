@@ -18,23 +18,16 @@ body {
       h1 {
         font-size: 5rem;
         font-weight: bold;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
       }
       h2 {
         font-size: 4rem;
         font-weight: bold;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
       p {
-        margin-bottom: 2rem;
-        font-size: 1.75rem;
-      }
-      ul {
-        list-style-type: square;
-        list-style-position: inside;
-      }
-      li {
-        font-size: 1.75rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
       }
     }
     .fellowship-head-image {
@@ -50,6 +43,38 @@ body {
       }
     }
   }
+  .targets{
+    background: black;
+    padding: 4rem 0 7.5rem 0;
+    h1 {
+      color: white;
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+    .targets-icons{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      .icon {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        align-items: center;
+        i {
+          font-size: 4rem;
+          color: @SIXR-yellow;
+          margin-bottom: 1.5rem;
+        }
+        p {
+          font-size: 2rem;
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
   .fellowship-main {
     width: 100%;
     background: rgb(245, 244, 245);
@@ -61,6 +86,7 @@ body {
       p {
         font-size: 2rem;
         font-weight: bold;
+        margin-bottom: 1.1rem;
       }
       h1 {
         font-size: 4rem;
@@ -85,22 +111,22 @@ body {
     }
     .fellow {
       display: none;
-      padding: 0 1rem 1rem 1rem;
+      padding: 0 1rem 2rem 1rem;
       
       h1 {
         font-size: 5rem;
         font-weight: bold;
         margin-top: 2rem;
+        margin-bottom: 1rem;
       }
       h2 {
         font-size: 3rem;
-        border-bottom: 4px solid;
         width: max-content;
         margin-bottom: 2rem;
-        padding-bottom: 1rem;
       }
       p {
         font-size: 2rem;
+        margin-bottom: 1rem;
       }
       button {
         width: max-content;
@@ -162,7 +188,7 @@ body {
         font-weight: bold;
         font-size: 1.5rem;
         background: white;
-        border: 2px solid @SIXR-yellow;
+        border: 1px solid @SIXR-yellow;
         padding: 0.75rem;
         background: @SIXR-yellow;
         color: white;
