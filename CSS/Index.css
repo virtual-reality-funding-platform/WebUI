@@ -247,10 +247,10 @@ body .home-hero .home-hero-text h1 {
 body .home-hero .home-hero-text button {
   font-family: "Lato";
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   background: white;
   border: 2px solid #2cbff2;
-  padding: 0.75rem;
+  padding: 1rem 2rem;
   background: #2cbff2;
   color: white;
   outline: none;
@@ -294,6 +294,7 @@ body .home-main .home-main-selector {
 body .home-main .home-main-selector h1 {
   font-size: 4rem;
   padding-bottom: 2rem;
+  font-weight: bold;
 }
 body .home-main .home-main-selector .selector-icons {
   width: 100%;
@@ -312,6 +313,7 @@ body .home-main .home-main-selector .selector-icons i {
 body .home-main .home-main-selector .selector-icons p {
   font-size: 2rem;
   margin-top: 1rem;
+  font-weight: bold;
 }
 body .home-main .home-main-selector .icon1:hover p {
   color: #2cbff2;
@@ -361,7 +363,7 @@ body .home-main .home-main-selector .icon-selected .minus-border {
 }
 body .home-main .home-main-content .home-main-item {
   display: none;
-  padding: 3rem;
+  margin: 5rem 8rem;
 }
 body .home-main .home-main-content .home-main-item-selected {
   display: flex;
@@ -393,14 +395,14 @@ body .flexible-parent .flexible-child button {
   font-weight: bold;
   font-size: 1.5rem;
   background: white;
-  border: 2px solid #2cbff2;
+  border: 2px solid #feb612;
   padding: 0.75rem;
-  background: #2cbff2;
+  background: #feb612;
   color: white;
   outline: none;
 }
 body .flexible-parent .flexible-child button:hover {
-  color: #2cbff2;
+  color: #feb612;
   background: white;
   cursor: pointer;
 }
@@ -410,7 +412,7 @@ body footer {
   flex-direction: column;
 }
 body footer .logo-links {
-  border-top: 0.5px solid white;
+  border-top: 2px solid white;
   display: flex;
   justify-content: space-between;
   align-items: center;
