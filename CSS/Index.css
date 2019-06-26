@@ -516,7 +516,7 @@ body footer .footer-copyright {
   align-items: center;
   border-radius: 2px;
   font-size: 1.5rem;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: bold;
 }
 .site-container .site-header .action-header .btn:hover {
@@ -612,14 +612,44 @@ body footer .footer-copyright {
 }
 .site-container .about-content .top-content {
   border-bottom: 5px dashed #ea1869;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 .site-container .about-content .middle-content {
   background: #3f3f3f;
   color: white;
   border-bottom: 5px dashed #feb612;
+  animation-duration: 3s;
+  animation-name: slidein-reverse;
+}
+@keyframes slidein-reverse {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0%;
+  }
 }
 .site-container .about-content .bottom-content {
   border-bottom: 5px dashed #51b13e;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 .news-content {
   display: flex;
@@ -628,10 +658,20 @@ body footer .footer-copyright {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  animation-duration: 2s;
+  animation-name: fadein;
 }
 @media (max-width: 560px) {
   .news-content {
     margin: 0 0 0 0;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
   }
 }
 .news-content h1 {
