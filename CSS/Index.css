@@ -299,6 +299,11 @@ body .home-main .home-main-selector h1 {
   font-weight: bold;
   color: white;
 }
+@media (max-width: 560px) {
+  body .home-main .home-main-selector h1 {
+    text-align: center;
+  }
+}
 body .home-main .home-main-selector .selector-icons {
   width: 100%;
   display: flex;
@@ -405,6 +410,11 @@ body .flexible-parent .flexible-child h1 {
     margin-right: 2.5rem;
   }
 }
+@media (max-width: 560px) {
+  body .flexible-parent .flexible-child h1 {
+    font-size: 2.5rem;
+  }
+}
 body .flexible-parent .flexible-child button {
   font-family: "Lato";
   font-weight: bold;
@@ -416,6 +426,11 @@ body .flexible-parent .flexible-child button {
   background: #feb612;
   color: white;
   outline: none;
+}
+@media (max-width: 560px) {
+  body .flexible-parent .flexible-child button {
+    padding: 1rem 2rem;
+  }
 }
 body .flexible-parent .flexible-child button:hover {
   color: #feb612;
@@ -452,15 +467,13 @@ body footer .logo-links .links i:hover {
   color: #ea1869;
   cursor: pointer;
 }
-body footer .footer-content ul {
-  padding-left: 0.5%;
-}
-body footer .footer-content ul li {
+body footer .footer-content a,
+body footer .footer-content p {
   color: white;
   font-size: 1.2rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5%;
 }
-body footer .footer-copyright {
+body .footer-copyright {
   color: white;
   text-align: center;
   margin-top: 1rem;
@@ -897,6 +910,11 @@ body .fellowship-main .fellow h2 {
   width: max-content;
   margin-bottom: 2rem;
 }
+@media (max-width: 560px) {
+  body .fellowship-main .fellow h2 {
+    font-size: 2.5rem;
+  }
+}
 body .fellowship-main .fellow p {
   font-size: 2rem;
   margin-bottom: 4rem;
@@ -949,6 +967,11 @@ body .fellow-flex-parent .fellow-flex-child h1 {
   font-size: 4rem;
   margin-right: 5rem;
   font-weight: bold;
+}
+@media (max-width: 560px) {
+  body .fellow-flex-parent .fellow-flex-child h1 {
+    font-size: 2.5rem;
+  }
 }
 body .fellow-flex-parent .fellow-flex-child button {
   font-family: "Lato";
