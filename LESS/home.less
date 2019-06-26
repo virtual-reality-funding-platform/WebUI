@@ -216,6 +216,10 @@ body {
         padding-bottom: 2rem;
         font-weight: bold;
         color: white;
+
+        @media @navTwo {
+          text-align: center;
+        }
       }
       .selector-icons {
         width: 100%;
@@ -313,14 +317,23 @@ body {
       display: flex;
       padding: 5rem 5rem;
       justify-content: center;
+      align-items: center;
+
+      @media @oneOff {
+        justify-content: space-around;
+      }
       
       h1 {
         font-size: 4rem;
         margin-right: 5rem;
         font-weight: bold;
-      }
-      p {
-        font-size: 2rem;
+
+        @media @oneOff {
+          margin-right: 2.5rem;
+        }
+        @media @navTwo {
+          font-size: 2.5rem;
+        }
       }
       button {
         font-family: "Lato";
@@ -329,10 +342,14 @@ body {
         background: white;
         border: 1px solid @SIXR-yellow;
         border-radius: 2px;
-        padding: 0.75rem;
+        padding: 1rem 3.5rem;
         background: @SIXR-yellow;
         color: white;
         outline: none;
+
+        @media @navTwo {
+          padding: 1rem 2rem;
+        }
       }
       button:hover {
         color: @SIXR-yellow;
@@ -378,12 +395,10 @@ body {
       }
     }
     .footer-content {
-      ul {
-        padding-left: 0.5%;
-        li {
+        a, p {
           color: white;
           font-size: 1.2rem;
-          padding-bottom: 0.5rem;
+          padding: 0.5%;
         }
       }
     }
@@ -394,4 +409,3 @@ body {
       margin-bottom: 1rem;
     }
   }
-}
