@@ -290,7 +290,7 @@ body .home-main .home-main-selector {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, transparent 50%, #2cbff2 0) bottom right / 75px 75px no-repeat, black;
+  background: linear-gradient(to bottom right, transparent 50%, #2cbff2 0) bottom right / 75px 75px no-repeat, #000000;
   padding-top: 6rem;
 }
 body .home-main .home-main-selector h1 {
@@ -438,7 +438,7 @@ body .flexible-parent .flexible-child button:hover {
   cursor: pointer;
 }
 body footer {
-  background: linear-gradient(to bottom right, transparent 50%, #51b13e 0) bottom right / 75px 75px no-repeat, black;
+  background: linear-gradient(to bottom right, transparent 50%, #51b13e 0) bottom right / 75px 75px no-repeat, #000000;
   display: flex;
   flex-direction: column;
 }
@@ -544,7 +544,7 @@ body .footer-copyright {
   align-items: center;
   border-radius: 2px;
   font-size: 1.5rem;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: bold;
 }
 .site-container .site-header .action-header .btn:hover {
@@ -640,14 +640,44 @@ body .footer-copyright {
 }
 .site-container .about-content .top-content {
   border-bottom: 5px dashed #ea1869;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 .site-container .about-content .middle-content {
   background: #3f3f3f;
   color: white;
   border-bottom: 5px dashed #feb612;
+  animation-duration: 3s;
+  animation-name: slidein-reverse;
+}
+@keyframes slidein-reverse {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0%;
+  }
 }
 .site-container .about-content .bottom-content {
   border-bottom: 5px dashed #51b13e;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 .news-content {
   display: flex;
@@ -656,10 +686,20 @@ body .footer-copyright {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  animation-duration: 2s;
+  animation-name: fadein;
 }
 @media (max-width: 560px) {
   .news-content {
     margin: 0 0 0 0;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
   }
 }
 .news-content h1 {
@@ -677,11 +717,10 @@ body .footer-copyright {
   flex-direction: row;
   width: 100%;
   height: 47px;
-  background-color: #3f3f3f;
 }
 .news-content .tabs .topics {
   display: flex;
-  justify-content: none;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
@@ -702,8 +741,8 @@ body .footer-copyright {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  color: white;
-  background-color: #51b13e;
+  color: black;
+  background-color: white;
   margin: 0 5px;
   padding: 2px 10px;
   font-size: 2rem;
@@ -722,8 +761,7 @@ body .footer-copyright {
   }
 }
 .news-content .tabs .active-tab {
-  background-color: white;
-  color: black;
+  color: #ea1869;
   border: 2px solid black;
 }
 .news-content .story-cards {
@@ -732,9 +770,7 @@ body .footer-copyright {
   align-items: none;
   flex-direction: row;
   width: 100%;
-  background-color: #2cbff2;
   flex-wrap: wrap;
-  border: 2px dashed #51b13e;
 }
 .news-content .story-cards .news-story {
   display: flex;
@@ -742,9 +778,17 @@ body .footer-copyright {
   align-items: none;
   flex-direction: column;
   width: 95%;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   padding: 24px;
   background-color: white;
+  border-bottom: 2px dashed lightgrey;
+}
+.news-content .story-cards .news-story h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#contactbody p {
+  font-size: 1.6rem;
 }
 #contactbody p {
   font-size: 1.6rem;
@@ -753,7 +797,7 @@ body .fellowship-head {
   display: flex;
   justify-content: space-between;
   padding: 3rem;
-  background: linear-gradient(to top left, transparent 50%, #feb612 0) top left / 75px 75px no-repeat, white;
+  background: linear-gradient(to top left, transparent 50%, #feb612 0) top left / 75px 75px no-repeat, #ffffff;
 }
 @media (max-width: 1030px) {
   body .fellowship-head {
@@ -798,7 +842,7 @@ body .fellowship-head .fellowship-head-image img {
   }
 }
 body .targets {
-  background: linear-gradient(to bottom right, transparent 50%, #2cbff2 0) bottom right / 75px 75px no-repeat, black;
+  background: linear-gradient(to bottom right, transparent 50%, #2cbff2 0) bottom right / 75px 75px no-repeat, #000000;
   padding: 4rem 0 7.5rem 0;
 }
 body .targets h1 {
