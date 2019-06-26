@@ -10,10 +10,10 @@ class Icon {
   select() {
     const icons = document.querySelectorAll('.icon');
     const iconGraphics = document.querySelectorAll('.icon i');
-    Array.from(iconGraphics).forEach(graphic => graphic.classList.remove('minus-border'));
     Array.from(icons).forEach(icon => icon.classList.remove('icon-selected'));
-    this.element.classList.add('icon-selected')
-    this.iconGraphic.classList.add('minus-border')
+    Array.from(iconGraphics).forEach(graphic => graphic.classList.remove('minus-border'));
+    this.element.classList.add('icon-selected');
+    this.iconGraphic.classList.add('minus-border');
     this.mainItem.select();
   }
 }

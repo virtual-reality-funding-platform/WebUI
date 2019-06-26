@@ -234,9 +234,9 @@ body .home-hero .home-hero-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem 3rem 0 3rem;
-  padding-bottom: 3rem;
-  background: #f5f4f5;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background: linear-gradient(to top left, transparent 50%, #feb612 0) top left / 75px 75px no-repeat, #f5f4f5;
 }
 body .home-hero .home-hero-text h1 {
   font-size: 5rem;
@@ -247,10 +247,11 @@ body .home-hero .home-hero-text h1 {
 body .home-hero .home-hero-text button {
   font-family: "Lato";
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   background: white;
-  border: 2px solid #2cbff2;
-  padding: 0.75rem;
+  border: 1px solid #2cbff2;
+  border-radius: 2px;
+  padding: 1rem 2rem;
   background: #2cbff2;
   color: white;
   outline: none;
@@ -265,11 +266,13 @@ body .home-hero .home-carousel {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 3.5rem;
+  margin: 3rem 0;
+  overflow: hidden;
 }
 body .home-hero .home-carousel .fas {
   font-size: 4rem;
   position: static;
+  margin: 2rem;
 }
 body .home-hero .home-carousel .fas:hover {
   color: #2cbff2;
@@ -277,23 +280,24 @@ body .home-hero .home-carousel .fas:hover {
 }
 body .home-hero .home-carousel img {
   height: auto;
-  max-width: 70%;
+  width: 85%;
+  max-width: 85%;
   overflow: hidden;
-  padding: 0 1rem;
   display: none;
-  padding-top: 3rem;
 }
 body .home-main .home-main-selector {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f5f4f5;
+  background: linear-gradient(to bottom right, transparent 50%, #2cbff2 0) bottom right / 75px 75px no-repeat, #000000;
   padding-top: 6rem;
 }
 body .home-main .home-main-selector h1 {
   font-size: 4rem;
   padding-bottom: 2rem;
+  font-weight: bold;
+  color: white;
 }
 body .home-main .home-main-selector .selector-icons {
   width: 100%;
@@ -305,13 +309,18 @@ body .home-main .home-main-selector .selector-icons {
 }
 body .home-main .home-main-selector .selector-icons i {
   font-size: 4rem;
-  border: 3px solid #3f3f3f;
+  border: 3px solid white;
   padding: 1.5rem;
   border-radius: 50%;
+  color: white;
 }
 body .home-main .home-main-selector .selector-icons p {
   font-size: 2rem;
   margin-top: 1rem;
+  font-weight: bold;
+}
+body .home-main .home-main-selector .icon {
+  color: white;
 }
 body .home-main .home-main-selector .icon1:hover p {
   color: #2cbff2;
@@ -358,10 +367,11 @@ body .home-main .home-main-selector .icon-selected {
 }
 body .home-main .home-main-selector .icon-selected .minus-border {
   border-style: none;
+  color: #2cbff2;
 }
 body .home-main .home-main-content .home-main-item {
   display: none;
-  padding: 3rem;
+  margin: 8rem 8rem;
 }
 body .home-main .home-main-content .home-main-item-selected {
   display: flex;
@@ -370,22 +380,21 @@ body .home-main .home-main-content p {
   font-size: 2.5rem;
 }
 body .flexible-parent {
-  background: black;
+  background: linear-gradient(to bottom left, transparent 50%, #ea1869 0) bottom left / 75px 75px no-repeat, #f5f4f5;
   display: flex;
 }
 body .flexible-parent .flexible-child {
   width: 100%;
   display: flex;
-  padding: 2.5rem 0;
+  padding: 5rem 5rem;
   justify-content: center;
 }
 body .flexible-parent .flexible-child h1 {
-  color: white;
   font-size: 4rem;
   margin-right: 5rem;
+  font-weight: bold;
 }
 body .flexible-parent .flexible-child p {
-  color: white;
   font-size: 2rem;
 }
 body .flexible-parent .flexible-child button {
@@ -393,24 +402,24 @@ body .flexible-parent .flexible-child button {
   font-weight: bold;
   font-size: 1.5rem;
   background: white;
-  border: 2px solid #2cbff2;
+  border: 1px solid #feb612;
+  border-radius: 2px;
   padding: 0.75rem;
-  background: #2cbff2;
+  background: #feb612;
   color: white;
   outline: none;
 }
 body .flexible-parent .flexible-child button:hover {
-  color: #2cbff2;
+  color: #feb612;
   background: white;
   cursor: pointer;
 }
 body footer {
-  background: black;
+  background: linear-gradient(to bottom right, transparent 50%, #51b13e 0) bottom right / 75px 75px no-repeat, #000000;
   display: flex;
   flex-direction: column;
 }
 body footer .logo-links {
-  border-top: 0.5px solid white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -423,6 +432,8 @@ body footer .logo-links .footer-logo img {
 }
 body footer .logo-links .links {
   padding-right: 0.5%;
+  display: flex;
+  flex-wrap: nowrap;
 }
 body footer .logo-links .links i {
   font-size: 3rem;
@@ -433,9 +444,6 @@ body footer .logo-links .links i:hover {
   color: #ea1869;
   cursor: pointer;
 }
-body footer .footer-content {
-  background: black;
-}
 body footer .footer-content ul {
   padding-left: 0.5%;
 }
@@ -445,7 +453,6 @@ body footer .footer-content ul li {
   padding-bottom: 0.5rem;
 }
 body footer .footer-copyright {
-  background: black;
   color: white;
   text-align: center;
   margin-top: 1rem;
@@ -762,10 +769,19 @@ body footer .footer-copyright {
 #contactbody p {
   font-size: 1.6rem;
 }
+#contactbody p {
+  font-size: 1.6rem;
+}
 body .fellowship-head {
   display: flex;
-  margin: 3rem 0;
-  width: 100%;
+  justify-content: space-between;
+  padding: 3rem;
+  background: linear-gradient(to top left, transparent 50%, #feb612 0) top left / 75px 75px no-repeat, #ffffff;
+}
+@media (max-width: 1030px) {
+  body .fellowship-head {
+    justify-content: center;
+  }
 }
 body .fellowship-head .fellowship-head-text {
   display: flex;
@@ -774,39 +790,71 @@ body .fellowship-head .fellowship-head-text {
   justify-content: center;
   width: 50%;
 }
+@media (max-width: 1030px) {
+  body .fellowship-head .fellowship-head-text {
+    width: 90%;
+  }
+}
 body .fellowship-head .fellowship-head-text h1 {
   font-size: 5rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 body .fellowship-head .fellowship-head-text h2 {
   font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 body .fellowship-head .fellowship-head-text p {
-  margin-bottom: 2rem;
-  font-size: 1.75rem;
-}
-body .fellowship-head .fellowship-head-text ul {
-  list-style-type: square;
-  list-style-position: inside;
-}
-body .fellowship-head .fellowship-head-text li {
-  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 body .fellowship-head .fellowship-head-image img {
-  max-height: 100%;
-  max-width: 100%;
+  width: 90%;
+  margin-left: 3.5%;
+  flex-shrink: 0;
+  min-width: 550px;
 }
 @media (max-width: 1030px) {
   body .fellowship-head .fellowship-head-image img {
     display: none;
   }
 }
+body .targets {
+  background: linear-gradient(to bottom right, transparent 50%, #2cbff2 0) bottom right / 75px 75px no-repeat, #000000;
+  padding: 4rem 0 7.5rem 0;
+}
+body .targets h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+body .targets .targets-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+body .targets .targets-icons .icon {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  align-items: center;
+}
+body .targets .targets-icons .icon i {
+  font-size: 4rem;
+  color: #feb612;
+  margin-bottom: 1.5rem;
+}
+body .targets .targets-icons .icon p {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
 body .fellowship-main {
   width: 100%;
-  background: #f5f4f5;
+  background: white;
 }
 body .fellowship-main .fellowship-main-heading {
   display: flex;
@@ -817,6 +865,7 @@ body .fellowship-main .fellowship-main-heading {
 body .fellowship-main .fellowship-main-heading p {
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 1.1rem;
 }
 body .fellowship-main .fellowship-main-heading h1 {
   font-size: 4rem;
@@ -840,22 +889,22 @@ body .fellowship-main .fellowship-selectors img:hover {
 }
 body .fellowship-main .fellow {
   display: none;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 2rem 1rem;
 }
 body .fellowship-main .fellow h1 {
   font-size: 5rem;
   font-weight: bold;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 body .fellowship-main .fellow h2 {
   font-size: 3rem;
-  border-bottom: 4px solid;
   width: max-content;
   margin-bottom: 2rem;
-  padding-bottom: 1rem;
 }
 body .fellowship-main .fellow p {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 body .fellowship-main .fellow button {
   width: max-content;
@@ -891,7 +940,7 @@ body .fellowship-main .fellow-selected {
   flex-direction: column;
 }
 body .fellow-flex-parent {
-  background: black;
+  background: linear-gradient(to bottom left, transparent 50%, #ea1869 0) bottom left / 75px 75px no-repeat, #f5f4f5;
   display: flex;
 }
 body .fellow-flex-parent .fellow-flex-child {
@@ -901,21 +950,18 @@ body .fellow-flex-parent .fellow-flex-child {
   justify-content: center;
 }
 body .fellow-flex-parent .fellow-flex-child h1 {
-  color: white;
   font-size: 4rem;
   margin-right: 5rem;
-}
-body .fellow-flex-parent .fellow-flex-child p {
-  color: white;
-  font-size: 2rem;
+  font-weight: bold;
 }
 body .fellow-flex-parent .fellow-flex-child button {
   font-family: "Lato";
   font-weight: bold;
   font-size: 1.5rem;
   background: white;
-  border: 2px solid #feb612;
+  border: 1px solid #feb612;
   padding: 0.75rem;
+  border-radius: 2px;
   background: #feb612;
   color: white;
   outline: none;
