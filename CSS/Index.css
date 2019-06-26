@@ -388,14 +388,22 @@ body .flexible-parent .flexible-child {
   display: flex;
   padding: 5rem 5rem;
   justify-content: center;
+  align-items: center;
+}
+@media (max-width: 713px) {
+  body .flexible-parent .flexible-child {
+    justify-content: space-around;
+  }
 }
 body .flexible-parent .flexible-child h1 {
   font-size: 4rem;
   margin-right: 5rem;
   font-weight: bold;
 }
-body .flexible-parent .flexible-child p {
-  font-size: 2rem;
+@media (max-width: 713px) {
+  body .flexible-parent .flexible-child h1 {
+    margin-right: 2.5rem;
+  }
 }
 body .flexible-parent .flexible-child button {
   font-family: "Lato";
@@ -404,7 +412,7 @@ body .flexible-parent .flexible-child button {
   background: white;
   border: 1px solid #feb612;
   border-radius: 2px;
-  padding: 0.75rem;
+  padding: 1rem 3.5rem;
   background: #feb612;
   color: white;
   outline: none;
@@ -725,7 +733,7 @@ body footer .footer-copyright {
   padding: 24px;
   background-color: white;
 }
-.contactbody p {
+#contactbody p {
   font-size: 1.6rem;
 }
 body .fellowship-head {
@@ -784,19 +792,39 @@ body .targets h1 {
   color: white;
   font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 body .targets .targets-icons {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+body .targets .targets-icons .iconsrow1,
+body .targets .targets-icons .iconsrow2 {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+@media (max-width: 560px) {
+  body .targets .targets-icons .iconsrow1,
+  body .targets .targets-icons .iconsrow2 {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+  }
 }
 body .targets .targets-icons .icon {
   display: flex;
   flex-direction: column;
-  width: 15%;
+  width: 25%;
   align-items: center;
+}
+@media (max-width: 560px) {
+  body .targets .targets-icons .icon {
+    margin: 2rem 0;
+    width: 50%;
+  }
 }
 body .targets .targets-icons .icon i {
   font-size: 4rem;
@@ -816,7 +844,7 @@ body .fellowship-main .fellowship-main-heading {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 body .fellowship-main .fellowship-main-heading p {
   font-size: 2rem;
@@ -826,11 +854,22 @@ body .fellowship-main .fellowship-main-heading p {
 body .fellowship-main .fellowship-main-heading h1 {
   font-size: 4rem;
   font-weight: bold;
+  margin-top: 0.5rem;
 }
 body .fellowship-main .fellowship-selectors {
   display: flex;
   justify-content: center;
   margin-left: 0.6%;
+}
+@media (max-width: 1030px) {
+  body .fellowship-main .fellowship-selectors {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body .fellowship-main .fellowship-selectors .row1,
+body .fellowship-main .fellowship-selectors .row2 {
+  display: flex;
 }
 body .fellowship-main .fellowship-selectors .shot-selected {
   opacity: 0.4;
@@ -845,12 +884,12 @@ body .fellowship-main .fellowship-selectors img:hover {
 }
 body .fellowship-main .fellow {
   display: none;
-  padding: 0 1rem 2rem 1rem;
+  padding: 0 1rem 3rem 1rem;
 }
 body .fellowship-main .fellow h1 {
   font-size: 5rem;
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 1rem;
 }
 body .fellowship-main .fellow h2 {
@@ -860,7 +899,7 @@ body .fellowship-main .fellow h2 {
 }
 body .fellowship-main .fellow p {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 body .fellowship-main .fellow button {
   width: max-content;
@@ -902,8 +941,9 @@ body .fellow-flex-parent {
 body .fellow-flex-parent .fellow-flex-child {
   width: 100%;
   display: flex;
-  padding: 2.5rem 0;
+  padding: 5rem 5rem;
   justify-content: center;
+  align-items: center;
 }
 body .fellow-flex-parent .fellow-flex-child h1 {
   font-size: 4rem;
@@ -916,7 +956,7 @@ body .fellow-flex-parent .fellow-flex-child button {
   font-size: 1.5rem;
   background: white;
   border: 1px solid #feb612;
-  padding: 0.75rem;
+  padding: 1rem 3.5rem;
   border-radius: 2px;
   background: #feb612;
   color: white;

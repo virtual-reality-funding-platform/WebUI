@@ -51,18 +51,34 @@ body {
       color: white;
       font-size: 4rem;
       font-weight: bold;
-      margin-bottom: 2.5rem;
+      margin-bottom: 5rem;
       text-align: center;
     }
     .targets-icons{
       width: 100%;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
+      .iconsrow1, .iconsrow2 {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+
+        @media @navTwo {
+          flex-direction: column;
+          align-items: center;
+          margin: 1rem 0;
+        }
+      }
       .icon {
         display: flex;
         flex-direction: column;
-        width: 15%;
+        width: 25%;
         align-items: center;
+
+        @media @navTwo {
+          margin: 2rem 0;
+          width: 50%;
+        }
         i {
           font-size: 4rem;
           color: @SIXR-yellow;
@@ -83,7 +99,7 @@ body {
       display: flex;
       flex-direction: column;
       text-align: center;
-      padding: 3rem 0;
+      padding: 4rem 0;
       p {
         font-size: 2rem;
         font-weight: bold;
@@ -92,12 +108,20 @@ body {
       h1 {
         font-size: 4rem;
         font-weight: bold;
+        margin-top: 0.5rem;
       }
     }
     .fellowship-selectors{
       display: flex;
       justify-content: center;
       margin-left: 0.6%;
+      @media @navOne {
+        flex-direction: column;
+        align-items: center;
+      }
+      .row1, .row2 {
+        display: flex;
+      }
       .shot-selected {
         opacity: 0.4;
       }
@@ -112,12 +136,12 @@ body {
     }
     .fellow {
       display: none;
-      padding: 0 1rem 2rem 1rem;
+      padding: 0 1rem 3rem 1rem;
       
       h1 {
         font-size: 5rem;
         font-weight: bold;
-        margin-top: 2rem;
+        margin-top: 4rem;
         margin-bottom: 1rem;
       }
       h2 {
@@ -127,7 +151,7 @@ body {
       }
       p {
         font-size: 2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 4rem;
       }
       button {
         width: max-content;
@@ -172,8 +196,9 @@ body {
     .fellow-flex-child {
       width: 100%;
       display: flex;
-      padding: 2.5rem 0;
+      padding: 5rem 5rem;
       justify-content: center;
+      align-items: center;
       
       h1 {
         font-size: 4rem;
@@ -186,7 +211,7 @@ body {
         font-size: 1.5rem;
         background: white;
         border: 1px solid @SIXR-yellow;
-        padding: 0.75rem;
+        padding: 1rem 3.5rem;
         border-radius: 2px;
         background: @SIXR-yellow;
         color: white;
