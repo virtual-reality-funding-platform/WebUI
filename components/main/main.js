@@ -10,10 +10,10 @@ class Icon {
   select() {
     const icons = document.querySelectorAll('.icon');
     const iconGraphics = document.querySelectorAll('.icon i');
-    Array.from(iconGraphics).forEach(graphic => graphic.classList.remove('minus-border'));
     Array.from(icons).forEach(icon => icon.classList.remove('icon-selected'));
-    this.element.classList.add('icon-selected')
-    this.iconGraphic.classList.add('minus-border')
+    Array.from(iconGraphics).forEach(graphic => graphic.classList.remove('minus-border'));
+    this.element.classList.add('icon-selected');
+    this.iconGraphic.classList.add('minus-border');
     this.mainItem.select();
   }
 }
@@ -24,8 +24,8 @@ class MainItem {
   }
   select() {
     const items = document.querySelectorAll('.home-main-item');
-    Array.from(items).forEach(item => item.classList.remove('home-main-item-selected'));
-    this.content.classList.add('home-main-item-selected');
+    Array.from(items).forEach(item => item.classList.remove('home-main-item-selected', 'animated', 'fadeInRight'));
+    this.content.classList.add('home-main-item-selected', 'animated', 'fadeInRight');
   }
 }
 

@@ -101,7 +101,6 @@ body {
     margin: 20px 0;
     @media @navOne {
       width: 100%;
-      display: flex;
       justify-content: center;
     }
 
@@ -142,15 +141,16 @@ body {
   .home-container .home-header .action-header .logo-img {
     width: 80px;
     height: 25px;
+    margin-bottom: 0;
   }
   .home-hero {
     .home-hero-text {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 6rem 3rem 0 3rem;
-      padding-bottom: 3rem;
-      background: rgb(245, 244, 245);
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      background: linear-gradient(to top left,transparent 50%, @SIXR-yellow 0) top left/75px 75px no-repeat,rgb(245, 244, 245); 
       h1 {
         font-size: 5rem;
         margin-bottom: 3rem;
@@ -160,10 +160,11 @@ body {
       button {
         font-family: "Lato";
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         background: white;
-        border: 2px solid @SIXR-blue;
-        padding: 0.75rem;
+        border: 1px solid @SIXR-blue;
+        border-radius: 2px;
+        padding: 1rem 2rem;
         background: @SIXR-blue;
         color: white;
         outline: none;
@@ -179,11 +180,17 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-bottom: 3.5rem;
+      margin: 3rem 0;
+      overflow: hidden;
+
+      @media @navTwo {
+        display: none;
+      }
 
       .fas {
         font-size: 4rem;
         position: static;
+        margin: 2rem;
       }
       .fas:hover {
         color: @SIXR-blue;
@@ -192,11 +199,10 @@ body {
 
       img {
         height: auto;
-        max-width: 70%;
+        width: 85%;
+        max-width: 85%;
         overflow: hidden;
-        padding: 0 1rem;
-        display: none;
-        padding-top: 3rem;
+        display: none; 
       }
     }
   }
@@ -206,12 +212,18 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: rgb(245, 244, 245);
+      background: linear-gradient(to top right,transparent 50%, @SIXR-blue 0) top right/75px 75px no-repeat, black;
       padding-top: 6rem;
 
       h1 {
         font-size: 4rem;
         padding-bottom: 2rem;
+        font-weight: bold;
+        color: white;
+
+        @media @navTwo {
+          text-align: center;
+        }
       }
       .selector-icons {
         width: 100%;
@@ -222,14 +234,19 @@ body {
         text-align: center;
         i {
           font-size: 4rem;
-          border: 3px solid @SIXR-color-primary-grey;
+          border: 3px solid white;
           padding: 1.5rem;
           border-radius: 50%;
+          color: white;
         }
         p {
           font-size: 2rem;
           margin-top: 1rem;
+          font-weight: bold;
         }
+      }
+      .icon{
+        color: white;
       }
       .icon1:hover p{
         color: @SIXR-blue;
@@ -276,6 +293,7 @@ body {
 
         .minus-border {
           border-style: none;
+          color: @SIXR-blue
         }
       }
     }
@@ -283,7 +301,7 @@ body {
 
       .home-main-item{
         display: none;
-        padding: 3rem;
+        margin: 8rem 8rem;
       }
 
       .home-main-item-selected {
@@ -295,49 +313,61 @@ body {
     }
   }
   .flexible-parent{
-    background: black;
+    background: linear-gradient(to bottom left,transparent 50%, @SIXR-pink 0) bottom left/75px 75px no-repeat, rgb(245, 244, 245);
     display: flex;
     
     .flexible-child {
       width: 100%;
       display: flex;
-      padding: 5rem 0;
+      padding: 5rem 5rem;
       justify-content: center;
+      align-items: center;
+
+      @media @oneOff {
+        justify-content: space-around;
+      }
       
       h1 {
-        color: white;
         font-size: 4rem;
         margin-right: 5rem;
-      }
-      p {
-        color: white;
-        font-size: 2rem;
+        font-weight: bold;
+
+        @media @oneOff {
+          margin-right: 2.5rem;
+        }
+        @media @navTwo {
+          font-size: 2.5rem;
+        }
       }
       button {
         font-family: "Lato";
         font-weight: bold;
         font-size: 1.5rem;
         background: white;
-        border: 2px solid @SIXR-blue;
-        padding: 0.75rem;
-        background: @SIXR-blue;
+        border: 1px solid @SIXR-yellow;
+        border-radius: 2px;
+        padding: 1rem 3.5rem;
+        background: @SIXR-yellow;
         color: white;
         outline: none;
+
+        @media @navTwo {
+          padding: 1rem 2rem;
+        }
       }
       button:hover {
-        color: @SIXR-blue;
+        color: @SIXR-yellow;
         background: white;
         cursor:pointer;
       }
     }
   }
   footer {
-    background: black;
+    background: linear-gradient(to bottom right,transparent 50%, @SIXR-green 0) bottom right/75px 75px no-repeat, black;
     display: flex;
     flex-direction: column;
 
     .logo-links {
-      border-top: 0.5px solid white;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -353,11 +383,14 @@ body {
       }
       .links {
         padding-right: 0.5%;
+        display: flex;
+        flex-wrap: nowrap;
 
         i {
           font-size: 3rem;
           margin: 0 0.25rem;
           color: white;
+
         }
         i:hover {
           color: @SIXR-pink;
@@ -366,22 +399,17 @@ body {
       }
     }
     .footer-content {
-      background: black;
-      ul {
-        padding-left: 0.5%;
-        li {
+        a, p {
           color: white;
           font-size: 1.2rem;
-          padding-bottom: 0.5rem;
+          padding: 0.5%;
         }
       }
     }
     .footer-copyright {
-      background: black;
       color: white;
       text-align: center;
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
   }
-}
