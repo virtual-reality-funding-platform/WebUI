@@ -24,8 +24,8 @@ class MainItem {
   }
   select() {
     const items = document.querySelectorAll('.home-main-item');
-    Array.from(items).forEach(item => item.classList.remove('home-main-item-selected'));
-    this.content.classList.add('home-main-item-selected');
+    Array.from(items).forEach(item => item.classList.remove('home-main-item-selected', 'animated', 'fadeInRight'));
+    this.content.classList.add('home-main-item-selected', 'animated', 'fadeInRight');
   }
 }
 

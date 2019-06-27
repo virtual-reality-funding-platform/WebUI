@@ -190,7 +190,6 @@ body .home-container .home-header .action-header {
 @media (max-width: 1030px) {
   body .home-container .home-header .action-header {
     width: 100%;
-    display: flex;
     justify-content: center;
   }
 }
@@ -229,6 +228,7 @@ body .home-container .home-header .action-header .donate-btn:hover {
 body .home-container .home-header .action-header .logo-img {
   width: 80px;
   height: 25px;
+  margin-bottom: 0;
 }
 body .home-hero .home-hero-text {
   display: flex;
@@ -269,6 +269,11 @@ body .home-hero .home-carousel {
   margin: 3rem 0;
   overflow: hidden;
 }
+@media (max-width: 560px) {
+  body .home-hero .home-carousel {
+    display: none;
+  }
+}
 body .home-hero .home-carousel .fas {
   font-size: 4rem;
   position: static;
@@ -290,7 +295,7 @@ body .home-main .home-main-selector {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, transparent 50%, #2cbff2 0) bottom right / 75px 75px no-repeat, #000000;
+  background: linear-gradient(to top right, transparent 50%, #2cbff2 0) top right / 75px 75px no-repeat, black;
   padding-top: 6rem;
 }
 body .home-main .home-main-selector h1 {
@@ -438,7 +443,7 @@ body .flexible-parent .flexible-child button:hover {
   cursor: pointer;
 }
 body footer {
-  background: linear-gradient(to bottom right, transparent 50%, #51b13e 0) bottom right / 75px 75px no-repeat, #000000;
+  background: linear-gradient(to bottom right, transparent 50%, #51b13e 0) bottom right / 75px 75px no-repeat, black;
   display: flex;
   flex-direction: column;
 }
@@ -790,14 +795,14 @@ body .footer-copyright {
 #contactbody p {
   font-size: 1.6rem;
 }
-#contactbody p {
-  font-size: 1.6rem;
+body .home-container .home-header .action-header .logo-img {
+  margin-bottom: 0;
 }
 body .fellowship-head {
   display: flex;
   justify-content: space-between;
   padding: 3rem;
-  background: linear-gradient(to top left, transparent 50%, #feb612 0) top left / 75px 75px no-repeat, #ffffff;
+  background: linear-gradient(to top left, transparent 50%, #feb612 0) top left / 75px 75px no-repeat, white;
 }
 @media (max-width: 1030px) {
   body .fellowship-head {
@@ -842,7 +847,7 @@ body .fellowship-head .fellowship-head-image img {
   }
 }
 body .targets {
-  background: linear-gradient(to bottom right, transparent 50%, #2cbff2 0) bottom right / 75px 75px no-repeat, #000000;
+  background: linear-gradient(to top right, transparent 50%, #2cbff2 0) top right / 75px 75px no-repeat, black;
   padding: 4rem 0 7.5rem 0;
 }
 body .targets h1 {
