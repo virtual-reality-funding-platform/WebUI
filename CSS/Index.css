@@ -795,6 +795,9 @@ body .footer-copyright {
 #contactbody p {
   font-size: 1.6rem;
 }
+body .home-container .home-header .action-header .logo-img {
+  margin-bottom: 0;
+}
 body .fellowship-head {
   display: flex;
   justify-content: space-between;
