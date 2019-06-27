@@ -75,3 +75,9 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
