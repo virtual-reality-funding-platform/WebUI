@@ -631,7 +631,7 @@ body .footer-copyright {
   }
 }
 .site-container .about-content .content img {
-  height: 40%;
+  width: 40%;
 }
 @media (max-width: 1030px) {
   .site-container .about-content .content img {
@@ -645,7 +645,7 @@ body .footer-copyright {
 }
 .site-container .about-content .top-content {
   border-bottom: 5px dashed #ea1869;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-name: slidein;
 }
 @keyframes slidein {
@@ -660,7 +660,7 @@ body .footer-copyright {
   background: #3f3f3f;
   color: white;
   border-bottom: 5px dashed #feb612;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-name: slidein-reverse;
 }
 @keyframes slidein-reverse {
@@ -673,7 +673,7 @@ body .footer-copyright {
 }
 .site-container .about-content .bottom-content {
   border-bottom: 5px dashed #51b13e;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-name: slidein;
 }
 @keyframes slidein {
@@ -691,20 +691,10 @@ body .footer-copyright {
   justify-content: center;
   align-items: center;
   margin: 20px;
-  animation-duration: 2s;
-  animation-name: fadein;
 }
 @media (max-width: 560px) {
   .news-content {
     margin: 0 0 0 0;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
   }
 }
 .news-content h1 {
@@ -754,9 +744,19 @@ body .footer-copyright {
   letter-spacing: 2px;
   cursor: pointer;
   font-weight: bold;
+  animation-duration: 1s;
+  animation-name: slidein-reverse;
 }
 .news-content .tabs .tab:hover {
   text-decoration: underline;
+}
+@keyframes slidein-reverse {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0%;
+  }
 }
 @media (max-width: 560px) {
   .news-content .tabs .tab {
@@ -776,6 +776,8 @@ body .footer-copyright {
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
+  animation-duration: 1s;
+  animation-name: slidein;
 }
 .news-content .story-cards .news-story {
   display: flex;
@@ -791,6 +793,14 @@ body .footer-copyright {
 .news-content .story-cards .news-story h2 {
   margin-bottom: 10px;
   font-weight: bold;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 #contactbody p {
   font-size: 1.6rem;
