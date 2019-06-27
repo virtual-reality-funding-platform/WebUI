@@ -46,7 +46,7 @@ h1 {
 }
 
 @media only screen and (max-width: 500px) {
-  .card {
+  .card-container {
     width: 100%;
     text-align: center;
     margin: auto;
