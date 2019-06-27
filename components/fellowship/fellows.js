@@ -21,7 +21,8 @@ class FellowItem {
   select() {
     const fellows = document.querySelectorAll('.fellow');
     Array.from(fellows).forEach(fellow => fellow.classList.remove('fellow-selected'));
-    this.element.classList.add('fellow-selected');
+    Array.from(fellows).forEach(fellow => fellow.classList.remove('animated', 'fadeInRight'));
+    this.element.classList.add('fellow-selected', 'animated', 'fadeInRight');
   }
 }
 

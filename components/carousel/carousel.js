@@ -20,6 +20,7 @@ class Carousel {
     const imgs = document.querySelectorAll(".home-carousel img");
     // Carousel breaks without below --> when the current img is displayed, all other images need to be at display none
     imgs.forEach(image => image.style.display = "none");
+    imgs.forEach(image =>image.classList.remove('animated', 'zoomIn', 'fast'));
     // Sets the negative counter for the left btn
     this.currentIndex -= 1;
     // Creates an infinite looping carousel
@@ -28,16 +29,19 @@ class Carousel {
     }
     // Displays the current image
     imgs[this.currentIndex].style.display = "flex";
+    imgs[this.currentIndex].classList.add('animated', 'zoomIn', 'fast');
   }
   rightBtnClicked(){
     const imgs = document.querySelectorAll(".home-carousel img");
     imgs.forEach(image => image.style.display = "none");
+    imgs.forEach(image => image.classList.remove('animated', 'zoomIn', 'fast'));
     // Sets the positive counter for the right btn
     this.currentIndex += 1;
     if(this.currentIndex > 3){
       this.currentIndex = 0;
     }
     imgs[this.currentIndex].style.display = "flex";
+    imgs[this.currentIndex].classList.add('animated', 'zoomIn', 'fast');
   }
 }
 // Creating new Carousel class
