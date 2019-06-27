@@ -2,10 +2,15 @@
   
   .column {
     display: flex;
-    align-content: center;
-    float: center;
+    margin: 0 auto;
     width: 50%;
     text-align: center;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   
   /* Clear floats after the columns */
@@ -30,13 +35,12 @@
     font-size: 1.6rem;
   }
 
-  @media screen and (min-width: 500px) {
-    .column {
-      display: inline-flex;
-      flex-direction: row;
-    }
+  .contactbody {
+    margin: 0 auto;
+    width: 500px;
+  }
   
-}
+
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
