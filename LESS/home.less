@@ -101,7 +101,6 @@ body {
     margin: 20px 0;
     @media @navOne {
       width: 100%;
-      display: flex;
       justify-content: center;
     }
 
@@ -142,6 +141,7 @@ body {
   .home-container .home-header .action-header .logo-img {
     width: 80px;
     height: 25px;
+    margin-bottom: 0;
   }
   .home-hero {
     .home-hero-text {
@@ -183,6 +183,10 @@ body {
       margin: 3rem 0;
       overflow: hidden;
 
+      @media @navTwo {
+        display: none;
+      }
+
       .fas {
         font-size: 4rem;
         position: static;
@@ -208,7 +212,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(to bottom right,transparent 50%, @SIXR-blue 0) bottom right/75px 75px no-repeat, black;
+      background: linear-gradient(to top right,transparent 50%, @SIXR-blue 0) top right/75px 75px no-repeat, black;
       padding-top: 6rem;
 
       h1 {
