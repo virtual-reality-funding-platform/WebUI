@@ -190,7 +190,6 @@ body .home-container .home-header .action-header {
 @media (max-width: 1030px) {
   body .home-container .home-header .action-header {
     width: 100%;
-    display: flex;
     justify-content: center;
   }
 }
@@ -229,6 +228,7 @@ body .home-container .home-header .action-header .donate-btn:hover {
 body .home-container .home-header .action-header .logo-img {
   width: 80px;
   height: 25px;
+  margin-bottom: 0;
 }
 body .home-hero .home-hero-text {
   display: flex;
@@ -268,6 +268,11 @@ body .home-hero .home-carousel {
   align-items: center;
   margin: 3rem 0;
   overflow: hidden;
+}
+@media (max-width: 560px) {
+  body .home-hero .home-carousel {
+    display: none;
+  }
 }
 body .home-hero .home-carousel .fas {
   font-size: 4rem;
