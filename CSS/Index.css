@@ -173,7 +173,8 @@ body .home-container .home-header .header-nav .nav-item {
 }
 @media (max-width: 560px) {
   body .home-container .home-header .header-nav .nav-item {
-    margin: 0px 12px;
+    margin: 0px 4px;
+    font-size: 1.4rem;
   }
 }
 body .home-container .home-header .header-nav .nav-item:hover {
